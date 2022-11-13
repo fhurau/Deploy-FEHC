@@ -92,9 +92,9 @@ export default function Profile() {
                 </div>
                 <div className="profile-img">
                     {state.user.listAs == "patient" ? (
-                        <img src={`http://localhost:5000/uploads/${state?.user?.image}`} alt="avatar" className="profile-avatar" />
+                        <img src={`${state?.user?.image}`} alt="avatar" className="profile-avatar" />
                     ) : (
-                        <img src={`http://localhost:5000/uploads/${state?.user?.image}`} alt="avatar" className="profile-avatar" />
+                        <img src={`${state?.user?.image}`} alt="avatar" className="profile-avatar" />
                     )}
                     <button className="profile-button" onClick={() => navigate(`/patient/edit-profile/${state.user.id}`)}>Edit Profile</button>
                 </div>
